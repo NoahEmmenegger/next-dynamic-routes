@@ -6,8 +6,8 @@ export default function Slug({testParam}: any) {
 export async function getStaticPaths() {
     return { 
         paths: [
-            {params: {slug: "test"}},
-            {params: {slug: "asdf"}}
+            {params: {slug: ["foo"]}},
+            {params: {slug: ["foo", "bar"]}}
         ],
         fallback: false
     }
